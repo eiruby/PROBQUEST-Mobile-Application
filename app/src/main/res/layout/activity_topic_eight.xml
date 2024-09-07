@@ -1,0 +1,1217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    tools:context=".ui.study.TopicEightActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/t8Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_arrow_back_24"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="40dp"
+            android:text="Permutation of n Distinct Objects\nTaken r at a Time"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/t8Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/round_menu_24"/>
+
+
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/t8ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/upper_corner"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:paddingBottom="50dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t8TextViewTitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/round_lightbulb_circle_24"
+                        android:drawablePadding="4dp"
+                        android:text="Objective"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue"/>
+
+                    <TextView
+                        android:id="@+id/t8TextView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:text="In this lesson, we will learn how to find the permutation of n distinct objects taken r at a time."
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/t8TextViewTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Introduction to lesson"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <TextView
+                    android:id="@+id/t8TextView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t8TextView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="{LI, LF, LE, IF, IE, IL, FE, FL, FI, EL, EI, EF}"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t8TextView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t8TextView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="4 × 3 = 12 possible arrangements."
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t8TextView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:padding="15dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/t8TextView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <ru.noties.jlatexmath.JLatexMathView
+                        android:id="@+id/t8Latex_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:jlmv_alignHorizontal="center"
+                        app:jlmv_textSize="16sp"
+                        app:jlmv_textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/t8TextView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Using the formula, we can also determine the possible arrangements of 4 letters taken 2 at a time,"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <ru.noties.jlatexmath.JLatexMathView
+                    android:id="@+id/t8Latex_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    app:jlmv_alignHorizontal="center"
+                    app:jlmv_textSize="16sp"
+                    app:jlmv_textColor="@color/black"/>
+
+                <ru.noties.jlatexmath.JLatexMathView
+                    android:id="@+id/t8Latex_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    app:jlmv_alignHorizontal="center"
+                    app:jlmv_textSize="16sp"
+                    app:jlmv_textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t8TextViewTitle3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Illustrative Examples"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+
+                <!--Example 1-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t8TextView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t8SolutionExample1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <GridLayout
+                        android:id="@+id/t8Solution1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:columnCount="2"
+                        android:rowCount="4">
+
+                        <TextView
+                            android:id="@+id/t8TextView10"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:text="Solution:"
+                            android:textStyle="italic"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t8TextView11"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="2"
+                            android:layout_marginBottom="10dp"
+                            android:text="LIFE has 4 distinct letters (n = 4) and 3-letter words (r = 3) are to be formed."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t8TextView12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:text="Listing Method:"
+                            android:textStyle="italic"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t8TextView13"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="2"
+                            android:layout_marginBottom="10dp"
+                            android:text="LIF, LIE, LEI, LEF, LFI, LFE, ILE, ILF, IFL, IFE, IEL, IEF, FLI, FLE, FIL, FIE, FEL, FEI, ELI, ELF, EIL, EIF, EFL, EFI\n\nThere are 24 possible arrangements"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t8TextView14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_marginBottom="10dp"
+                            android:text="FCP:"
+                            android:textStyle="italic"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t8Latex_4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="2"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t8TextView15"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:text="Formula:"
+                            android:textStyle="italic"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t8Latex_5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="2"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                    </GridLayout>
+
+                </LinearLayout>
+
+                <!--Example 2-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t8TextView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t8SolutionExample2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <GridLayout
+                        android:id="@+id/t8Solution2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:columnCount="2"
+                        android:rowCount="4">
+
+                        <TextView
+                            android:id="@+id/t8TextView17"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:text="Solution:"
+                            android:textStyle="italic"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t8TextView18"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="2"
+                            android:layout_marginBottom="10dp"
+                            android:text="n = 5 and r = 2"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t8TextView19"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:text="Listing Method:"
+                            android:textStyle="italic"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t8TextView20"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="2"
+                            android:layout_marginBottom="10dp"
+                            android:text="24, 26, 28, 29, 46, 48, 49, 42, 68, 69, 62, 64, 89, 82, 84, 86, 92, 94, 96, 98\n\nThere are 20 possible arrangements"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t8TextView21"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_marginBottom="10dp"
+                            android:text="FCP:"
+                            android:textStyle="italic"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t8Latex_6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="2"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t8TextView22"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:text="Formula:"
+                            android:textStyle="italic"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t8Latex_7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="2"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                    </GridLayout>
+
+                </LinearLayout>
+
+                <!--Example 3-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t8TextView23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t8SolutionExample3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <GridLayout
+                        android:id="@+id/t8Solution3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:columnCount="2"
+                        android:rowCount="3">
+
+                        <TextView
+                            android:id="@+id/t8TextView24"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_marginBottom="10dp"
+                            android:text="Solution:"
+                            android:textStyle="italic"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t8TextView25"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="2"
+                            android:layout_marginBottom="10dp"
+                            android:text="n = 10 and r = 3"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+
+                        <TextView
+                            android:id="@+id/t8TextView26"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_marginBottom="10dp"
+                            android:text="FCP:"
+                            android:textStyle="italic"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t8Latex_8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="2"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t8TextView27"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:text="Formula:"
+                            android:textStyle="italic"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t8Latex_9"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="2"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                    </GridLayout>
+
+                </LinearLayout>
+
+                <!--Example 4-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t8TextView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t8TextView29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) two particular of them are always together?\n\n(b) two particular children of them are never together?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t8SolutionExample4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t8Solution4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="20dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t8TextView30"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(a) We consider the arrangements by taking 2 particular children counted as one and hence the remaining 4 can be arranged in 4P4 or 4!. We can use either FCP or nPr formula."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t8Latex_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="20dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t8TextView31"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="20dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t8Latex_11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="20dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t8TextView32"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="20dp"
+                            android:text="Therefore, there are 24 × 2 = 48 total ways of arrangement."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t8TextView33"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(b) Among the 5! = 120 permutations of 5 children, there are 48 in which two children are together. In the remaining 120 – 48 = 72 permutations, two particular children are never together."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Example 5-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t8TextView34"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t8TextView35"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) the shelf is good for five books only?\n\n(b) two particular books are grouped together?\n\n(c) books of the same subject are grouped together?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t8SolutionExample5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t8Solution5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="20dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t8TextView36"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:columnCount="2"
+                            android:rowCount="2">
+
+                            <TextView
+                                android:id="@+id/t8TextView37"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:layout_marginBottom="10dp"
+                                android:text="FCP:"
+                                android:textStyle="italic"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"/>
+
+                            <ru.noties.jlatexmath.JLatexMathView
+                                android:id="@+id/t8Latex_12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                app:jlmv_textSize="16sp"
+                                app:jlmv_textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/t8TextView38"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Formula:"
+                                android:textStyle="italic"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"/>
+
+                            <ru.noties.jlatexmath.JLatexMathView
+                                android:id="@+id/t8Latex_13"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                app:jlmv_textSize="16sp"
+                                app:jlmv_textColor="@color/black"/>
+
+                        </GridLayout>
+
+                        <TextView
+                            android:id="@+id/t8TextView39"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="There are 2,520 ways to arrange the seven books on a shelf that could hold five books."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t8TextView40"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t8Latex_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t8TextView41"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t8Latex_15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t8TextView42"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="To get the arrangement where two particular books are together, we have"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t8Latex_16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t8TextView43"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="There are 1,440 distinct arrangements where two particular books are together."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t8TextView44"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t8Latex_17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t8TextView45"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="There are 288 possible arrangements where books of the same subject are grouped together."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Activities-->
+
+                <TextView
+                    android:id="@+id/t8TextViewTitle4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:text="Activities"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <!--Activity 1-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t8Act1Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t8Act1Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 2-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t8Act2Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t8Act2Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 3-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t8Act3Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t8Act3Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) If there are 7 students, how many ways can you line up any 3 of them?\n\n(b) How many ways can 5 PTA officers in Grade 10 be elected among 20 parents?\n\n(c) How many two-digit numbers can be formed using the digits 1,2,3,4 and 5 if no digit is repeated in any number?\n\n(d) From 1000 lottery tickets that are sold, 3 tickets are to be selected for first, second, and third prizes. How many possible outcomes are there?\n\n(e) A group has 10 members. In how many ways can 4 officers consisting of president, vice-president, secretary, and treasurer be chosen?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 4-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t8Act4Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t8Act4Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) the shelf is good for five books only?\n\n(b) the shelf is good for six books only?\n\n(c) the shelf is good for 7 books only?\n\n(d) two particular books are grouped together?\n\n(e) books of the same subject are grouped together?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 5-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t8Act5Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t8Act5Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) Five out of 8 students are to be seated in a row of chairs. Two particular students must be in the picture. How many ways can this be done?\n\n(b) How many ways can the letters of the word “FRIEND” be arranged so that the vowels come together?\n\n(c) How many different license plate numbers can be made using the letters followed by 2 digits selected from 0 to 9, if letters and digits may not be repeated?\n\n(d) How many ordered codes can be formed using 4 of the digits in 1,2,3, and 4 if the digits are not repeated by must begin with 3?\n\n(e) An employee ID number at a large company consists of 3-digit numbers and a letter such as 123A, 367B, and 234Z. How many possible ID numbers are there in which all 3 digits are different?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Assessment-->
+
+                <TextView
+                    android:id="@+id/t8TextViewTitle5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:text="Assessment"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Assessment"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/t8ActScore"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/t8ActDirection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Test your knowledge of permutation of n distinct objects taken r at a time with this assessment."
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/t8ActStart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_button"
+                        android:backgroundTint="@color/sea_green"
+                        android:paddingHorizontal="15dp"
+                        android:text="Start Activity"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/t8ActLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/t8ActFeedback"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/t8ActQuestion"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:text="The probability of getting a 4 in rolling a standard die once."
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/t8ActOpts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/t8ActOpt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option A"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"/>
+
+                        <Button
+                            android:id="@+id/t8ActOpt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option B"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"/>
+
+                        <Button
+                            android:id="@+id/t8ActOpt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option C"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"/>
+
+                        <Button
+                            android:id="@+id/t8ActOpt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option D"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/t8ActAnsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/t8ActSubmit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_button"
+                            android:backgroundTint="@color/sea_green"
+                            android:text="Submit"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/t8ActSolText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="Answer:"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t8ActAns"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ZoomControls
+            android:id="@+id/t8ZoomControls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@+id/t8ScrollView"
+            app:layout_anchorGravity="bottom|center"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

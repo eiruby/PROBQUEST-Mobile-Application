@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    tools:context=".ui.study.TopicFourActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/t4Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_arrow_back_24"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Non-Mutually Exclusive Events"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/t4Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/round_menu_24"/>
+
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/t4ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/upper_corner"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:paddingBottom="50dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t4TextViewTitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/round_lightbulb_circle_24"
+                        android:drawablePadding="4dp"
+                        android:text="Objective"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue"/>
+
+                    <TextView
+                        android:id="@+id/t4TextView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:text="In this lesson, we will learn how to find the probability of non-mutually exclusive events."
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/t4TextViewTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Introduction to lesson"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:layout_gravity="center"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:text="Click on the video to start watching a lecture on the probability of non-mutually exclusive events"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        app:lottie_rawRes="@raw/pointing_down"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"/>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <VideoView
+                        android:id="@+id/t4Video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="220dp"
+                        android:layout_gravity="center"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textStyle="italic"
+                    android:text="Video Source: https://youtu.be/UKuCyADXAlg?si=3xXizE_JR5ssnsaq5"/>
+
+                <TextView
+                    android:id="@+id/t4TextView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t4TextView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t4TextView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t4TextView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="1. rolling a pair of dice showing doubles or a sum of 12.\n2. drawing a face card or a jack of clubs from an ordinary deck of cards.\n3. rolling an even number or a prime number.\n4. spinning a 6 or an even number on a roulette with numbers from 1- 10.\n5. drawing a red card or a diamond from an ordinary deck of cards."
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t4TextView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <ru.noties.jlatexmath.JLatexMathView
+                    android:id="@+id/t4Latex_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:jlmv_alignHorizontal="center"
+                    app:jlmv_textSize="14sp"
+                    app:jlmv_textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t4TextView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Let us visualize the non-mutually exclusive events using Venn Diagram. Observe that the circles representing each have an overlap."
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/t4_lesson_img1" />
+
+                <TextView
+                    android:id="@+id/t4TextViewTitle3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Illustrative Examples"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <!--Example 1-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t4TextView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/dice_set"/>
+
+                    <TextView
+                        android:id="@+id/t4SolutionExample1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t4Solution1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:columnCount="2"
+                            android:rowCount="4">
+
+                            <TextView
+                                android:id="@+id/t4TextView9"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Given:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/t4TextView10"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="3"
+                                android:text="P(A) is the probability of getting a number 3\nP(B) is the probability of getting an odd number\nP(A and B) is the probability of a number 3 and an odd number\n\nA die has 6 faces numbered 1, 2, 3, 4, 5, and 6. There exist one (1) number 3, three (3) odd numbers, and one (1) number which is both 3 and an odd number.\n\nThus,"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"/>
+
+                            <ru.noties.jlatexmath.JLatexMathView
+                                android:id="@+id/t4Latex_2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_columnWeight="3"
+                                app:jlmv_textSize="16sp"
+                                app:jlmv_textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/t4TextView11"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Solution:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <ru.noties.jlatexmath.JLatexMathView
+                                android:id="@+id/t4Latex_3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="3"
+                                app:jlmv_textSize="16sp"
+                                app:jlmv_textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"/>
+
+                            <TextView
+                                android:id="@+id/t4TextView12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="3"
+                                android:text="The probability of die showing a number 3 or odd number is 1/2."
+                                android:textSize="16sp"
+                                android:textColor="@color/black"/>
+
+                        </GridLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Example 2-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t4TextView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/deck_of_cards"/>
+
+                    <TextView
+                        android:id="@+id/t4SolutionExample2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t4Solution2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:columnCount="2"
+                            android:rowCount="4">
+
+                            <TextView
+                                android:id="@+id/t4TextView14"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Given:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/t4TextView15"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="3"
+                                android:text="P(A) is the probability of drawing a red,\nP(B) is the probability of drawing a face card\nP( A and B) is the probability of drawing a red or a face card\n\nIn a standard deck of 52 cards, there exists 26 red cards, 12 face cards. Also, there are 6 cards which are both red cards and face cards and these are jack, queen, and king of diamonds, and jack, queen, and king of hearts."
+                                android:textSize="16sp"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"/>
+
+                            <ru.noties.jlatexmath.JLatexMathView
+                                android:id="@+id/t4Latex_4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_columnWeight="3"
+                                app:jlmv_textSize="16sp"
+                                app:jlmv_textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/t4TextView16"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Solution:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <ru.noties.jlatexmath.JLatexMathView
+                                android:id="@+id/t4Latex_5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="3"
+                                app:jlmv_textSize="16sp"
+                                app:jlmv_textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"/>
+
+                            <TextView
+                                android:id="@+id/t4TextView17"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="3"
+                                android:text="The probability of drawing a red card or a face card is 8/13."
+                                android:textSize="16sp"
+                                android:textColor="@color/black"/>
+
+                        </GridLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Example 3-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t4TextView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t4SolutionExample3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t4Solution3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:columnCount="2"
+                            android:rowCount="4">
+
+                            <TextView
+                                android:id="@+id/t4TextView19"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Given:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/t4TextView20"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="3"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"/>
+
+                            <ru.noties.jlatexmath.JLatexMathView
+                                android:id="@+id/t4Latex_6"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_columnWeight="3"
+                                app:jlmv_textSize="16sp"
+                                app:jlmv_textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/t4TextView21"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Solution:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <ru.noties.jlatexmath.JLatexMathView
+                                android:id="@+id/t4Latex_7"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="3"
+                                app:jlmv_textSize="16sp"
+                                app:jlmv_textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"/>
+
+                            <TextView
+                                android:id="@+id/t4TextView22"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="3"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"/>
+
+                        </GridLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Example 4-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t4TextView23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t4SolutionExample4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t4Solution4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:columnCount="2"
+                            android:rowCount="4">
+
+                            <TextView
+                                android:id="@+id/t4TextView24"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Given:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/t4TextView25"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="3"
+                                android:text="P(A) is the probability of picking up an even number.\nP(B) is the probability of picking up a number that is multiple of 5.\nP(A and B) is the probability of picking up a number both even and a multiple of 5.\n\nA = {even number} = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30};\nn(A) = 15\nB = {multiple of 5} = {5, 10, 15, 20, 25, 30};\nn(B) = 6
+P(A and B) = {10, 20, 30};\nn(A and B} = 3\n\nThus,"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"/>
+
+                            <ru.noties.jlatexmath.JLatexMathView
+                                android:id="@+id/t4Latex_8"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_columnWeight="3"
+                                app:jlmv_textSize="16sp"
+                                app:jlmv_textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/t4TextView26"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Solution:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <ru.noties.jlatexmath.JLatexMathView
+                                android:id="@+id/t4Latex_9"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="3"
+                                app:jlmv_textSize="16sp"
+                                app:jlmv_textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"/>
+
+                            <TextView
+                                android:id="@+id/t4TextView27"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="3"
+                                android:text="The probability that the picked number is even or a multiple of 5 is 3/5."
+                                android:textSize="16sp"
+                                android:textColor="@color/black"/>
+
+                        </GridLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Example 5-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t4TextView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t4SolutionExample5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t4Solution5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:columnCount="2"
+                            android:rowCount="4">
+
+                            <TextView
+                                android:id="@+id/t4TextView29"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Given:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/t4TextView30"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="3"
+                                android:text="P(A) is the probability of a chosen employee being a man.\nP(B) is the probability of a chosen employee being married.\nP(A and B) is the probability of a chosen employee being a man and married.\n\nLet us identify the given in the problem:"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"/>
+
+                            <ru.noties.jlatexmath.JLatexMathView
+                                android:id="@+id/t4Latex_10"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_columnWeight="3"
+                                app:jlmv_textSize="16sp"
+                                app:jlmv_textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/t4TextView31"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Solution:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <ru.noties.jlatexmath.JLatexMathView
+                                android:id="@+id/t4Latex_11"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="3"
+                                app:jlmv_textSize="16sp"
+                                app:jlmv_textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"/>
+
+                            <TextView
+                                android:id="@+id/t4TextView32"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="3"
+                                android:text="The probability that one of the employees chosen at random is a man or is married is 4/5."
+                                android:textSize="16sp"
+                                android:textColor="@color/black"/>
+
+                        </GridLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Activities-->
+
+                <TextView
+                    android:id="@+id/t4TextViewTitle4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:text="Activities"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <!--Activity 1-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t4Act1Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t4Act1Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) an even number or a 4?\n(b) an odd number or a factor of 3?\n(c) an even number or a prime number?\n(d) an even number or a number less than 5?\n(e) a composite number or a number that is a multiple of 3?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 2-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t4Act2Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t4Act2Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) a diamond or a queen?\n(b) a black jack or a spade?\n(c) an ace or a red card?\n(d) a face card or a king?\n(e) a 10 or a black card?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 3-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t4Act3Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t4Act3Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) an odd number or a 5?\n(b) an even number or a factor of 5?\n(c) a multiple of 10 or a factor of 2?\n(d) a factor of 3 or divisible by 5?\n(e) a prime number or an even number?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 4-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t4Act4Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t4Act4Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) a man or is married?\n(b) a woman or is married?\n(c) a man or is single?\n(d) a woman or is single?\n(e) neither a man nor married??"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 5-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t4Act5Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <!--Assessment-->
+
+                <TextView
+                    android:id="@+id/t4TextViewTitle5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:text="Assessment"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Assessment"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/t4ActScore"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/t4ActDirection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Test your knowledge of non-mutually exclusive events with this assessment."
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/t4ActStart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_button"
+                        android:backgroundTint="@color/sea_green"
+                        android:paddingHorizontal="15dp"
+                        android:text="Start Activity"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/t4ActLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/t4ActFeedback"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/t4ActQuestion"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:text="The probability of getting a 4 in rolling a standard die once."
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/t4ActOpts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/t4ActOpt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option A"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"/>
+
+                        <Button
+                            android:id="@+id/t4ActOpt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option B"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"/>
+
+                        <Button
+                            android:id="@+id/t4ActOpt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option C"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"/>
+
+                        <Button
+                            android:id="@+id/t4ActOpt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option D"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/t4ActAnsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/t4ActSubmit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_button"
+                            android:backgroundTint="@color/sea_green"
+                            android:text="Submit"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/t4ActSolText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="Answer:"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t4ActAns"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Reference-->
+
+                <TextView
+                    android:id="@+id/t4TextViewTitle6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:text="Reference"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="20dp"
+                    android:text="https://libraryguides.centennialcollege.ca/c.php?g=717168\&amp;p=5127684\n\nhttps://www.onlinemathlearning.com/mutually-exclusive-events.html\n\nhttps://math.libretexts.org/"
+                    android:textStyle="italic"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ZoomControls
+            android:id="@+id/t4ZoomControls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@+id/t4ScrollView"
+            app:layout_anchorGravity="bottom|center"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

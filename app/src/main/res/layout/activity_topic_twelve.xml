@@ -1,0 +1,1777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    tools:context=".ui.study.TopicTwelveActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/t12Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_arrow_back_24"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="40dp"
+            android:text="Fundamental Counting Principle"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/t12Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/round_menu_24"/>
+
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/t12ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/upper_corner"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:paddingBottom="50dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t12TextViewTitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/round_lightbulb_circle_24"
+                        android:drawablePadding="4dp"
+                        android:text="Objective"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue"/>
+
+                    <TextView
+                        android:id="@+id/t12TextView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:text="In this lesson, we will learn how to use a tree diagram in determining all possible outcomes of a compound event and finding the number of ways a compound event may occur using the fundamental principle of counting."
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/t12TextViewTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Introduction to lesson"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <TextView
+                    android:id="@+id/t12TextView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/t12_lesson_img1"/>
+
+                <TextView
+                    android:id="@+id/t12TextView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="All the possible outcomes are listed above as shown in the right column. There are 6 possible choices of outfit that Camila could choose to wear.\n\nHere is another example of using the tree diagram to count the number of possible outcomes. Suppose that a married couple wishes to have three children in their family,"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t12TextView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="(a) how many possible outcomes for the genders of the family?\n\n(b) how many of all three children will have the same gender?\n(c) how many have exactly two of the three children will be girls?\n(d) how many have at least one of the three children will be girls?\n(e) how many have none of the three children will be a boy?"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t12TextView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Solution:"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t12TextView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="(a) The list of possible outcomes for the genders of the family are BBB, BBG, BGB, BGG, GBB, GBG, GGB, and GGG. There are 8 possible outcomes."
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/t12_lesson_img2"/>
+
+                <TextView
+                    android:id="@+id/t12TextView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="(b) The three children of the same gender are BBB and GGG. There are 2 possible outcomes.\n\n(c) The children which have exactly two of them are girls are BGG, GBG, and GGB. There are 3 possible outcomes.\n\n(d) The word “at least one of them is a girl” means having one or more girls in the family. The children which have at least one of them will be a girl are BBG, BGB, BGG, GBB, GBG, GGB, and GGG. There are 7 possible outcomes.\n\n(e) None of them will be a boy can also be stated as all of the three children are girls. Thus, the only possible outcome is GGG. There is only 1 possible outcome."
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/t12TextView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="The tree diagram was helpful in illustrating the list of possible combinations of outcomes in the two examples presented above. Similarly, we can also count the total number of outcomes without the need to list the possible combinations of outcomes through the use of the Fundamental Counting Principle (FCP)."
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:padding="10dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/t12TextView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <ru.noties.jlatexmath.JLatexMathView
+                        android:id="@+id/t12Latex_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:jlmv_alignHorizontal="center"
+                        app:jlmv_textSize="16sp"
+                        app:jlmv_textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/t12TextView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Thus, going back in the first example, we can use the Fundamental Counting Principle to determine the total number of outcomes should Camila choose to wear from the 3 shirts of different colors and 2 types of pair of pants, we have"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginHorizontal="60dp"
+                    android:rowCount="2"
+                    android:columnCount="4">
+
+                    <TextView
+                        android:id="@+id/t12TextView11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_columnWeight="2"
+                        android:text="shirts"
+                        android:textAlignment="center"
+                        android:textStyle="italic"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_columnWeight="1"/>
+
+                    <TextView
+                        android:id="@+id/t12TextView12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_columnWeight="2"
+                        android:text="pants"
+                        android:textAlignment="center"
+                        android:textStyle="italic"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_columnWeight="2"/>
+
+                    <ru.noties.jlatexmath.JLatexMathView
+                        android:id="@+id/t12Latex_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="2"
+                        app:jlmv_alignHorizontal="center"
+                        app:jlmv_textSize="16sp"
+                        app:jlmv_textColor="@color/black"/>
+
+                    <ru.noties.jlatexmath.JLatexMathView
+                        android:id="@+id/t12Latex_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        app:jlmv_alignHorizontal="center"
+                        app:jlmv_textSize="16sp"
+                        app:jlmv_textColor="@color/black"/>
+
+                    <ru.noties.jlatexmath.JLatexMathView
+                        android:id="@+id/t12Latex_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="2"
+                        app:jlmv_alignHorizontal="center"
+                        app:jlmv_textSize="16sp"
+                        app:jlmv_textColor="@color/black"/>
+
+                    <ru.noties.jlatexmath.JLatexMathView
+                        android:id="@+id/t12Latex_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="2"
+                        app:jlmv_alignHorizontal="center"
+                        app:jlmv_textSize="16sp"
+                        app:jlmv_textColor="@color/black"/>
+
+                </GridLayout>
+
+                <TextView
+                    android:id="@+id/t12TextView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="where choosing shirts of different colors is the first event which may occur in 3 ways and choosing types of pants is the second event which may occur in 2 ways. Thus, there are 6 different ways to choose the possible outfit.\n\nLikewise in the second example, we can use the FCP to determine the possible outcomes for the genders of the family. We have 2 choices of gender (boy or girl) for each of the three events. Thus, we have"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:rowCount="2"
+                    android:columnCount="6">
+
+                    <TextView
+                        android:id="@+id/t12TextView14"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_columnWeight="2"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_columnWeight="1"/>
+
+                    <TextView
+                        android:id="@+id/t12TextView15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_columnWeight="2"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_columnWeight="1"/>
+
+                    <TextView
+                        android:id="@+id/t12TextView16"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_columnWeight="2"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_columnWeight="2"/>
+
+                    <ru.noties.jlatexmath.JLatexMathView
+                        android:id="@+id/t12Latex_6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="2"
+                        app:jlmv_alignHorizontal="center"
+                        app:jlmv_textSize="16sp"
+                        app:jlmv_textColor="@color/black"/>
+
+                    <ru.noties.jlatexmath.JLatexMathView
+                        android:id="@+id/t12Latex_7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        app:jlmv_alignHorizontal="center"
+                        app:jlmv_textSize="16sp"
+                        app:jlmv_textColor="@color/black"/>
+
+                    <ru.noties.jlatexmath.JLatexMathView
+                        android:id="@+id/t12Latex_8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="2"
+                        app:jlmv_alignHorizontal="center"
+                        app:jlmv_textSize="16sp"
+                        app:jlmv_textColor="@color/black"/>
+
+                    <ru.noties.jlatexmath.JLatexMathView
+                        android:id="@+id/t12Latex_9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        app:jlmv_alignHorizontal="center"
+                        app:jlmv_textSize="16sp"
+                        app:jlmv_textColor="@color/black"/>
+
+                    <ru.noties.jlatexmath.JLatexMathView
+                        android:id="@+id/t12Latex_10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="2"
+                        app:jlmv_alignHorizontal="center"
+                        app:jlmv_textSize="16sp"
+                        app:jlmv_textColor="@color/black"/>
+
+                    <ru.noties.jlatexmath.JLatexMathView
+                        android:id="@+id/t12Latex_11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="2"
+                        app:jlmv_alignHorizontal="center"
+                        app:jlmv_textSize="16sp"
+                        app:jlmv_textColor="@color/black"/>
+
+                </GridLayout>
+
+                <TextView
+                    android:id="@+id/t12TextView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="To have a deeper understanding of the Fundamental Counting Principle, more examples are presented below."
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <!--Illustrative Examples-->
+
+                <TextView
+                    android:id="@+id/t12TextViewTitle3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Illustrative Examples"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="@color/blue"/>
+
+                <!--Example 1-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t12TextView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t12SolutionExample1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t12Solution1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t12TextView19"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="A person can choose one type of rice, one viand, one drink, and one dessert. The total number of possible choices are"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t12Latex_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:jlmv_alignHorizontal="center"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--Example 2-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t12TextView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t12TextView21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="(a) repetitions are permitted?\n(b) repetitions are not allowed?\n(c) the number must be odd and repetitions are not allowed?\n(d) the number must be greater than 50,000 and repetitions are allowed?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t12SolutionExample2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t12Solution2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t12TextView22"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(a) Since repetition is allowed, there are five choices to fill each of the five spaces. It means that the first digit can be filled up in five ways, and the second digit can also be filled up in five ways. In the same manner, the third, fourth, and fifth digits can also be filled up in five ways. Therefore, the number can be formed in"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t12Latex_13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_alignHorizontal="center"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t12TextView23"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(b) If repetition is not allowed, the first digit can be filled up in five ways. But the second digit can be filled up in four ways since one of the digits was already used up to occupy the first position. In the same manner, the third can be filled up in three ways, the fourth in two ways, and the fifth in only one way. Therefore, the number can be formed in"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t12Latex_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_alignHorizontal="center"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t12TextView24"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(c) If the number must be odd, then the last digit must be 3, 5, and 7 only. Therefore, the last position can be chosen in three ways."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t12Latex_15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_alignHorizontal="center"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t12TextView25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="Let’s say, 7 was chosen as the odd number to fill up the last digit. Therefore, 3, 4, 5, and 6 were left as digits. Since there are four choices left and repetition is not allowed, the first position can be chosen in four ways, the second in three ways and so on. Thus, to form the five-digit odd numbers there are"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t12Latex_16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_alignHorizontal="center"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t12TextView26"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(d) For the number greater than 50 000, we can only choose 5,6, and 7 from the given digits to fill the first digit. Placing 3 or 4 in the first digit will result in a number less than 50,000. Therefore, the first digit can be chosen in 3 ways."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t12Latex_17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_alignHorizontal="center"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t12TextView27"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="Let’s say, 5 was chosen to fill up the first digit. Therefore, 3,4,6, and 7 were left as digits. Since there are four choices left, the second digit can be chosen in four ways. In the same manner, the third digit, the fourth digit, and the fifth digit can also be chosen in four ways since repetition is allowed. Thus, to form the five-digit odd numbers there are"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t12Latex_18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:jlmv_alignHorizontal="center"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--Example 3-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t12TextView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t12TextView29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="(a) How many 3-digit numbers digits can be formed if repetition is allowed?\n(b) How many of these 3-digit numbers are even if repetition is allowed?\n(c) How many of these 3-digit numbers are odd if repetition is not allowed?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t12SolutionExample3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t12Solution3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t12TextView30"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(a) Since zero cannot be used as the first digit, therefore, there are nine choices left for the first digit. The second digit and the third digit can be chosen in 10 ways since repetition is
+allowed."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t12Latex_19"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_alignHorizontal="center"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t12TextView31"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(b) Since zero cannot be used as the first digit, therefore, there are nine choices left for the first digit. To be an even number, the last number can be 0, 2, 4, 6, or 8 which gives us 5 choices.  The second digit can be chosen in 10 ways since repetition is allowed."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t12Latex_20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_alignHorizontal="center"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t12TextView32"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(c) Since zero cannot be used as the first digit, therefore, there are nine choices left for the first digit. To be an odd number, the last number can be 1, 3, 5, 7, 9 which gives us 5 choices.  Since the two digits were already used up to occupy the 1st and the 3rd digit and repetition is not allowed, therefore the second digit can be chosen in 8 ways."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t12Latex_21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:jlmv_alignHorizontal="center"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--Example 4-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t12TextView33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t12TextView34"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="(a) How many different license plates are possible? (Assume repetitions of letters and numbers are allowed)\n(b) How many will have all their letters and digits distinct?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t12SolutionExample4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t12Solution4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t12TextView35"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(a) The license plates consist of three letters followed by four numbers. Note that there are 26 letters and 10 digits and that repetition is allowed. Thus, the first three positions can be filled in any one of 26 ways. This means that there are 26 choices for the first letter, another 26 choices for the second letter, and again 26 choices for the third letter. Also, the remaining four positions can each be filled in any 10 ways. The total number of license plates possible is"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:stretchColumns="0,1,2,3,4,5,6"
+                            android:gravity="center">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@color/black" >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="0"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="L"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="1"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="L"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="2"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="L"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="3"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="D"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="4"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="D"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="5"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="D"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="6"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="D"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@color/black">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="0"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="26"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="1"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="26"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="2"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="26"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="3"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="10"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="4"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="10"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="5"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="10"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="6"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="10"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t12Latex_22"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_alignHorizontal="center"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t12TextView36"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(b) For all the letters and digits to be distinct, it means that no repetition is allowed. Since there are 3 letters to be filled, thus, there are 26 choices for the first letter, 25 choices left for the second letter, and 24 choices left for the third letter. The four digits can also be filled in the same manner. There are 10 choices for the first digit, 9 choices left for the second digit, 8 choices left for the third digit, and 7 choices left for the fourth digit. The total number of license plates possible is"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"/>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:stretchColumns="0,1,2,3,4,5,6"
+                            android:gravity="center">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@color/black" >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="0"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="L"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="1"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="L"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="2"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="L"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="3"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="D"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="4"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="D"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="5"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="D"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="6"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="D"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@color/black">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="0"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="26"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="1"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="25"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="2"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="24"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="3"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="10"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="4"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="9"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="5"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="8"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="6"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="7"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t12Latex_23"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:jlmv_alignHorizontal="center"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--Example 5-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t12TextView37"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t12TextView38"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="(a) how many different outcomes are possible?\n(b) how many outcomes have at least one tail?\n(c) how many outcomes have at most 2 tails?\n(d) how many outcomes have exactly 2 heads?"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t12SolutionExample5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t12Solution5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t12TextView39"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(a) Let us use a tree diagram to visualize all the possible outcomes."
+                            android:textSize="16dp"
+                            android:textColor="@color/black"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/t12_lesson_img3"/>
+
+                        <TextView
+                            android:id="@+id/t12TextView40"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="Observe that in the tree diagram, there are 8 possible outcomes for tossing or flipping the coin three times. This result can also be obtained using the Fundamental Counting Principle. Every time we toss or flip a coin, there are two possibilities: Head (H) or Tail (T). It means, there are two possible outcomes for each toss or flip. Thus,"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"/>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:stretchColumns="0,1,2"
+                            android:gravity="center">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@color/black" >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="0"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="1st"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="1"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="2nd"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="2"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="3rd"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@color/black">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="0"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="2"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="1"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="2"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1dp"
+                                    android:layout_column="2"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:text="2"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t12Latex_24"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_alignHorizontal="center"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t12TextView41"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(b) The word “at least one tail” means having one or more tails in the outcomes. The list of possible outcomes with at least one tail are HHT, HTH, HTT, THH, THT, TTH, and TTT. Thus, there are 7 different outcomes that have at least one tail.\n\n(c) The word “at most two tails” means having two or less than two tails in the outcomes. The list of possible outcomes with at most two tails are:"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t12TextView42"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="with one tail: HHT, HTH, THH\nwith two tails: HTT, THT, TTH"
+                            android:textAlignment="center"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t12TextView43"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="Adding the results, there are 6 different outcomes of at most two tails."
+                            android:textSize="16dp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t12TextView44"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="(d)  The possible outcomes have exactly 2 heads are HHT, HTH, THH. Thus, there are 3 different outcomes."
+                            android:textSize="16dp"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Activities-->
+
+                <TextView
+                    android:id="@+id/t12TextViewTitle4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:text="Activities"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t12Act1Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t12Act1Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) Daniel has 4 pants and 3 shirts. How many different pairs of a pants and shirts can he wear?\n\n(b) There are 7 contestants in the math quiz bee competition. How many possible ways are there to award gold, silver, and bronze medal?\n\n(c) How many ways can five books be arranged on a shelf?\n\n(d) How many ways can a student answer 5 true or false questions?\n\n(e) Two dice are rolled. How many possible outcomes have a sum of at least 7?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 2-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t12Act2Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t12Act2Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) How many possible ID numbers are there in which all 3 digits are different?\n\n(b) How many possible ID numbers are there in which all three digits are different?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 3-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t12Act3Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t12Act3Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) How many 4-digit numbers digits can be formed if repetition is allowed?\n\n(b) How many 4-digit numbers digits can be formed if repetition is not allowed?\n\n(c) How many of these 4-digit numbers are even if repetition is allowed?\n\n(d) How many of these 4-digit numbers are odd if repetition is not allowed?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 4-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t12Act4Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t12Act4Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) repetitions are permitted?\n\n(b) repetitions are not allowed?\n\n(c) the number must be odd and repetitions are allowed?\n\n(d) the number must be even and repetitions are not allowed?\n\n(e) the number must be greater than 40,000 and repetitions are allowed?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 5-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t12Act5Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t12Act5Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) how many different outcomes are possible?\n\n(b) how many outcomes have at least one tail?\n\n(c) how many outcomes have at most 3 tails?\n\n(d) how many outcomes have exactly 2 heads?\n\n(e) how many outcomes have exactly 2 tails?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Assessment-->
+
+                <TextView
+                    android:id="@+id/t12TextViewTitle5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:text="Assessment"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Assessment"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/t12ActScore"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/t12ActDirection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Test your knowledge of fundamental counting principle with this assessment."
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/t12ActStart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_button"
+                        android:backgroundTint="@color/sea_green"
+                        android:paddingHorizontal="15dp"
+                        android:text="Start Activity"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/t12ActLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/t12ActFeedback"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/t12ActQuestion"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:text="The probability of getting a 4 in rolling a standard die once."
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/t12ActOpts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/t12ActOpt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option A"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"/>
+
+                        <Button
+                            android:id="@+id/t12ActOpt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option B"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"/>
+
+                        <Button
+                            android:id="@+id/t12ActOpt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option C"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"/>
+
+                        <Button
+                            android:id="@+id/t12ActOpt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option D"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/t12ActAnsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/t12ActSubmit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_button"
+                            android:backgroundTint="@color/sea_green"
+                            android:text="Submit"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/t12ActSolText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="Answer:"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t12ActAns"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ZoomControls
+            android:id="@+id/t12ZoomControls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@+id/t12ScrollView"
+            app:layout_anchorGravity="bottom|center"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

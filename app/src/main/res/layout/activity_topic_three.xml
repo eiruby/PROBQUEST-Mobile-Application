@@ -1,0 +1,1363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    tools:context=".ui.study.TopicThreeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/t3Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_arrow_back_24"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Mutually Exclusive Events"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/t3Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/round_menu_24"/>
+
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/t3ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/upper_corner"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:paddingBottom="50dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t3TextViewTitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/round_lightbulb_circle_24"
+                        android:drawablePadding="4dp"
+                        android:text="Objective"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue"/>
+
+                    <TextView
+                        android:id="@+id/t3TextView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:text="In this lesson, we will learn how to find the probability of mutually exclusive events."
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/t3TextViewTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Introduction to lesson"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:layout_gravity="center"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:text="Click on the video to start watching a lecture on the probability of mutually exclusive events"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        app:lottie_rawRes="@raw/pointing_down"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"/>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <VideoView
+                        android:id="@+id/t3Video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="220dp"
+                        android:layout_gravity="center"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textStyle="italic"
+                    android:text="Video Source: https://youtu.be/UKuCyADXAlg?si=3xXizE_JR5ssnsaq5"/>
+
+                <TextView
+                    android:id="@+id/t3TextView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t3TextView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Set A = {2, 4, 6, 8, 10, 12, 14, 16,...}\nSet B = {1, 3, 5, 7, 9, 11, 13, 15,...}"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t3TextView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t3TextView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t3TextView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t3TextView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginStart="20dp"
+                    android:text="1. a dice showing a 3 or a 5\n2. drawing a jack or a queen\n3. selecting a vowel or a consonant from the word PROBABILITY\n4. spinning a 5 or an even number on a roulette with numbers from 1 to 10\n5. rolling a pair of dice and getting a sum of 8 or a sum of 10"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t3TextView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <ru.noties.jlatexmath.JLatexMathView
+                    android:id="@+id/t3Latex_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    app:jlmv_alignHorizontal="center"
+                    app:jlmv_textSize="16sp"
+                    app:jlmv_textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t3TextView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Let us visualize the mutually exclusive events using Venn Diagram. Observe that the circles representing each do not overlap."
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/t3_lesson_img1"/>
+
+                <TextView
+                    android:id="@+id/t3TextView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="The probability of A or B occurring is their respective probabilities added together."
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t3TextViewTitle3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Illustrative Examples"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <!--Example 1-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t3TextView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/dice_set"/>
+
+                    <TextView
+                        android:id="@+id/t3SolutionExample1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t3Solution1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t3TextView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="Let"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t3TextView13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="P(A) = P(2) is the probability of getting a 2\nP(B) = P(5) is the probability of getting a 5\n\nThere are six faces in a die: 1, 2, 3, 4, 5, 6. There exists one 2 and one 5.\n\nThus,"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t3Latex_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t3Latex_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t3TextView14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="The probability of die showing a 2 or 5 is 1/3."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--Example 2-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t3TextView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t3SolutionExample2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t3Solution2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t3TextView18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="Let P(A) = P(queen) is the probability of drawing a queen\nLet P(B) = P(ace) is the probability of drawing an ace.\n\nIn a standard deck of 52 cards, there exists 4 queens and 4 aces.\n\nThus,"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t3Latex_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t3Latex_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t3TextView19"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="The probability of drawing a queen or an ace is 2/13."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--Example 3-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t3TextView23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t3SolutionExample3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t3Solution3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t3TextView24"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t3Latex_8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t3Latex_9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t3TextView25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="The probability of landing on the head side of the coin and rolling a 2 on the die or landing on the tail side of the coin and rolling a 4 on the die is 1/6."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--Example 4-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t3TextView26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t3SolutionExample4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t3Solution4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t3TextView27"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="P(A) = P(China) is the probability of team China winning the boat racing.\nP(B) = P(Philippines) is the probability of the team Philippines winning the race.\nP(C) = P(USA) is the probability of the team USA winning the boat race.\n\nWe have,"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t3Latex_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t3Latex_11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t3TextView28"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="The probability of either Philippines or USA wins in the dragon boat racing is 8/15."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--Example 5-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+
+                    <TextView
+                        android:id="@+id/t3TextView29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t3TextView30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="(a) getting either all heads or getting exactly two tails?\n(b) getting either all tails or getting at least one head?\n(c) getting either exactly two heads or exactly two tails?\n(d) getting neither all heads nor all tails?\n(e) getting neither exactly one head nor exactly one tail?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t3SolutionExample5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t3Solution5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t3TextView31"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="Solution:\n\n(a) Let"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t3TextView32"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="P(A) = P(all heads) is the probability of getting all heads.\nP(B) = P(exactly two tails) is the probability of getting exactly two tails.\n\nThere are 8 possible outcomes when tossing coins three times in succession: {HHH, HHT, HTH, THH, TTH, THT, HTT, TTT}.\nThere is 1 outcome of getting all heads (HHH) and there are 3 outcomes of getting exactly two tails (TTH, THT, HTT).\n\nThus,"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t3Latex_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t3Latex_13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t3TextView33"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="The probability of getting either all heads or getting exactly two tails is 1/2."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t3TextView34"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(b) Let"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t3TextView35"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="P(A) = P(all tails) is the probability of getting all tails.\nP(B) = P(at least one head) is the probability of getting at least one head.\n\nThere are 8 possible outcomes when tossing coins three times in succession: {HHH, HHT, HTH, THH, TTH, THT, HTT, TTT}.\nThere is 1 outcome of getting all tails {HHH} and there are 7 outcomes of getting at least one head {HHH, HHT, HTH, THH, TTH, THT, HTT}.\nThe word “at least one head” means one or more heads.\n\nThus,"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t3Latex_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t3Latex_15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t3TextView36"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="The probability of getting either all tails or getting at least one head is 1."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t3TextView37"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(c) Let"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t3TextView38"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="P(A) = P(exactly two heads) is the probability of getting exactly two heads.\nP(B) = P(exactly two tails) is the probability of getting exactly two tails.\n\nThere are 8 possible outcomes when tossing coins three times in succession: {HHH, HHT, HTH, THH, TTH, THT, HTT, TTT}.\nThere are 3 outcomes of getting exactly two heads (HHT, HTH, THH) and also 3 outcomes of getting exactly two tails (TTH, THT, HTT).\n\nThus,"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t3Latex_16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t3Latex_17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t3TextView39"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="The probability of getting exactly two heads or getting exactly two tails is 3/4."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t3TextView40"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(d) Let"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t3TextView41"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="P(A) = P(all heads) is the probability of getting all heads.\nP(B) = P(all tails) is the probability of getting all tails.\n\nThere are 8 possible outcomes when tossing coins three times in succession: {HHH, HHT, HTH, THH, TTH, THT, HTT, TTT}.\nThere is 1 outcome of getting all heads (HHH) and also 1 outcome of getting all tails (TTT).\n\nThus,"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t3Latex_18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t3TextView42"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="In any experiment, the sum of probabilities of all events is always 1. Thus, to get the probability of getting neither all heads nor all tails subtract the probability of getting all heads or getting all tails from 1."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t3Latex_19"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t3TextView43"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="The probability of getting neither all heads nor getting all tails is 3/4."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t3TextView44"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(e) Let"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t3TextView45"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="P(A) = P(exactly one head) is the probability of getting exactly one head.\nP(B) = P(exactly one tail) is the probability of getting exactly one tail.\n\nThere are 8 possible outcomes when tossing coins three times in succession: {HHH, HHT, HTH, THH, TTH, THT, HTT, TTT}.\nThere are 3 outcomes of getting exactly one head (TTH, THT, HTT) and also there are 3 outcomes of getting exactly one tail (HHT, HTH, THH).\n\nThus,"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t3Latex_20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t3TextView46"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="In any experiment, the sum of probabilities of all events is always 1. Thus, to get the probability of getting neither exactly one head nor exactly one tail, subtract the probability of getting exactly one head or exactly one tail from 1."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t3Latex_21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginBottom="15dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t3TextView47"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="The probability of getting neither exactly one head nor exactly one tail is 1/4."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Activity 1-->
+
+                <TextView
+                    android:id="@+id/t3TextViewTitle4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:text="Activities"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Activity 1"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/t3Act1Score"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/t3Act1Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Get ready to enhance your understanding of mutually exclusive events with this activity!"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/t3Act1Start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_button"
+                        android:backgroundTint="@color/sea_green"
+                        android:paddingHorizontal="15dp"
+                        android:text="Start Activity"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/t3Act1Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/t3Act1Feedback"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/t3Act1Question"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:text="1. The probability of getting a 4 in rolling a standard die once."
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/t3Act1Opt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/t3Act1Opt1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="Y"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"/>
+
+                        <Button
+                            android:id="@+id/t3Act1Opt2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="N"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/t3Act1Submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:background="@drawable/custom_button"
+                        android:backgroundTint="@color/sea_green"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <!--Activity 2-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t3Act2Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t3Act2Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) either a white ball or a black ball?\n\n(b) either a black ball or a green ball?\n\n(c) either a white ball or a black ball or a green ball?\n\n(d) neither a green ball nor a black ball?\n\n(e) neither a black ball nor a white ball?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 3-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t3Act3Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t3Act3Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) either all heads or getting exactly three tails?\n\n(b) either all tails or getting at least one head?\n\n(c) either exactly three heads or exactly two tails?\n\n(d) neither all heads nor all tails?\n\n(e) neither exactly one head nor exactly one tail?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 4-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t3Act4Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t3Act4Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) total of 3 or 5?\n\n(b) doubles or a sum of 6?\n\n(c) a sum less than 5 or equal to 10?\n\n(d) a total of at most 4 or greater than 11?\n\n(e) a total of at least 9 or equal to 4?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 5-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t3Act5Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t3Act5Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) a king or a queen of hearts?\n\n(b) a club or a heart?\n\n(c) a red card or a black queen?\n\n(d) a number card or a red king?\n\n(e) a 3, 5, or a club?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Assessment-->
+
+                <TextView
+                    android:id="@+id/t3TextViewTitle5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:text="Assessment"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Assessment"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/t3ActScore"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/t3ActDirection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Test your knowledge of mutually exclusive events with this assessment."
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/t3ActStart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_button"
+                        android:backgroundTint="@color/sea_green"
+                        android:paddingHorizontal="15dp"
+                        android:text="Start Activity"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/t3ActLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/t3ActFeedback"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/t3ActQuestion"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:text="The probability of getting a 4 in rolling a standard die once."
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/t3ActOpts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/t3ActOpt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option A"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"/>
+
+                        <Button
+                            android:id="@+id/t3ActOpt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option B"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"/>
+
+                        <Button
+                            android:id="@+id/t3ActOpt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option C"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"/>
+
+                        <Button
+                            android:id="@+id/t3ActOpt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option D"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/t3ActAnsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/t3ActSubmit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_button"
+                            android:backgroundTint="@color/sea_green"
+                            android:text="Submit"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/t3ActSolText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="Answer:"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t3ActAns"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/t3TextViewTitle6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:text="Reference:"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="20dp"
+                    android:text="https://libraryguides.centennialcollege.ca/c.php?g=717168&amp;p=5127684\n\nhttps://www.onlinemathlearning.com/mutually-exclusive-events.html"
+                    android:textStyle="italic"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ZoomControls
+            android:id="@+id/t3ZoomControls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@+id/t3ScrollView"
+            app:layout_anchorGravity="bottom|center"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

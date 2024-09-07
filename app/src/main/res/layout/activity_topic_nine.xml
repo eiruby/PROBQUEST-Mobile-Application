@@ -1,0 +1,1400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    tools:context=".ui.study.TopicNineActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/t9Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_arrow_back_24"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Circular Permutation"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/t9Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/round_menu_24"/>
+
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/t9ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/upper_corner"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:paddingBottom="50dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t9TextViewTitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/round_lightbulb_circle_24"
+                        android:drawablePadding="4dp"
+                        android:text="Objective"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:text="In this lesson, we will learn how to find the number of permutations of n distinct objects arranged in a circle."
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/t9TextViewTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Introduction to lesson"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <TextView
+                    android:id="@+id/t9TextView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t9TextView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <ru.noties.jlatexmath.JLatexMathView
+                        android:id="@+id/t9Latex_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:jlmv_alignHorizontal="center"
+                        app:jlmv_textSize="16sp"
+                        app:jlmv_textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/t9TextView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Suppose there are four chairs around a table to be occupied by four persons A, B, C and D, in how many ways can they arrange themselves? These four persons A, B, C and D, can arrange themselves in 4! ways if they are to be arranged in a row. There is a start and there is an end."
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:rowCount="5"
+                    android:columnCount="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:gravity="center"
+                        android:layout_columnWeight="1"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="3"
+                        android:gravity="center"
+                        android:text="How many persons will occupy a seat in a row?"
+                        android:textSize="16sp"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="4"
+                        android:gravity="center"
+                        android:text="Why?"
+                        android:textStyle="italic"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+
+                    <TextView
+                        android:id="@+id/t9TextView7"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="1st seat"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView8"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="3"
+                        android:gravity="center"
+                        android:text="4 persons"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView9"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="4"
+                        android:gravity="center"
+                        android:text="The 1st seat can be occupied by any of the four persons, A, B, C, or D. Let us say B occupies the 1st seat."
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView10"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="2nd seat"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView11"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="3"
+                        android:gravity="center"
+                        android:text="3 persons"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="4"
+                        android:gravity="center"
+                        android:text="Now, the 2nd seat can be occupied by any of the three remaining persons, A, C, or D. Let us say C occupies the 2nd seat."
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView13"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="3rd seat"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="3"
+                        android:gravity="center"
+                        android:text="2 persons"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView15"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="4"
+                        android:gravity="center"
+                        android:text="The 3rd seat next to C can be occupied by any of the remaining two remaining persons A, or D, say D."
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView16"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="4th seat"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView17"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="3"
+                        android:gravity="center"
+                        android:text="1 person"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView18"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="4"
+                        android:gravity="center"
+                        android:text="The fourth seat is to be occupied by the remaining person A."
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </GridLayout>
+
+                <TextView
+                    android:id="@+id/t9TextView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Thus, by FCP the number of ways in which the four persons can arrange themselves in a row is 4 × 3 × 2 × 1 = 4! = 24 ways.\n\nIn a circular permutation, there is nothing like a start or an end. The four persons can be arranged in different ways."
+                    android:textSize="16dp"
+                    android:textColor="@color/black"/>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:rowCount="5"
+                    android:columnCount="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="1" />
+
+                    <TextView
+                        android:id="@+id/t9TextView20"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="3"
+                        android:gravity="center"
+                        android:text="How many persons will occupy a seat in a round table?"
+                        android:textSize="16sp"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView21"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="4"
+                        android:gravity="center"
+                        android:text="Why?"
+                        android:textStyle="italic"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView22"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="1st seat"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView23"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="3"
+                        android:gravity="center"
+                        android:text="1 person"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView24"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="4"
+                        android:gravity="center"
+                        android:text="A particular chair is to be designated as the first seat which serves as the starting point, and to be occupied by the designated first person, say B."
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView25"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="2nd seat"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView26"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="3"
+                        android:gravity="center"
+                        android:text="3 persons"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView27"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="4"
+                        android:gravity="center"
+                        android:text="Since the designated first seat is already occupied by the designated first person (B), then the next chair, either clockwise or counterclockwise, can now be occupied by any of the three remaining persons A, C, or D. Let us say D occupies the second seat."
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView28"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="3rd seat"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView29"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="3"
+                        android:gravity="center"
+                        android:text="2 persons"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="4"
+                        android:gravity="center"
+                        android:text="The third seat next to B can be occupied by any of the remaining three persons A, or C, say C."
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView31"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="4th seat"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView32"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="3"
+                        android:gravity="center"
+                        android:text="1 person"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView33"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_columnWeight="4"
+                        android:gravity="center"
+                        android:text="The fourth seat is to be occupied by the remaining person A."
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </GridLayout>
+
+                <TextView
+                    android:id="@+id/t9TextView34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"/>
+
+                <ru.noties.jlatexmath.JLatexMathView
+                    android:id="@+id/t9Latex_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:jlmv_alignHorizontal="center"
+                    app:jlmv_textSize="16sp"
+                    app:jlmv_textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t9TextView35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t9TextViewTitle3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Illustrative Examples"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <!--Example 1-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t9TextView36"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9SolutionExample1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t9Solution1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t9Latex_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t9TextView37"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="There are 120 ways of arranging the six horses in a carousel."
+                            android:textSize="16dp"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Example 2-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t9TextView38"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9SolutionExample2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t9Solution2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t9Latex_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t9TextView39"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="There are 362,880 ways of planting the 10 different roses in a circular garden."
+                            android:textSize="16dp"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Example 3-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t9TextView40"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9SolutionExample3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t9Solution3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t9Latex_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t9TextView41"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="There are 720 ways of arranging the 7 different keys on a key ring."
+                            android:textSize="16dp"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Example 4-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t9TextView42"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView43"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) they can sit anywhere?\n(b) 2 particular guests must sit next to each other, and\n(c) 2 particular guests must not sit next to each other?"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9SolutionExample4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t9Solution4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t9Latex_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t9TextView44"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="There are 5,040 ways of arranging the 8 guests in a circle."
+                            android:textSize="16dp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t9TextView45"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="(b) Since 2 particular guests must sit next to each other, take them as one person. The two guests can be arranged among themselves in"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t9Latex_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:jlmv_alignHorizontal="center"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t9TextView46"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="20dp"
+                            android:text="Then there are 7 guests all together and they can be arranged in"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t9Latex_8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t9TextView47"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="20dp"
+                            android:text="Then the number of ways of arranging the 7 guests at a round table with 2 particular guests sitting to each other is"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t9Latex_9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:jlmv_alignHorizontal="center"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t9TextView48"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(c) The number of ways of arranging the 8 guests in a circle where 2 must NOT sit next to each other is given by"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/t9TextView49"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="4"
+                                android:text="number of ways of arranging the 8 guests in a circle"
+                                android:textAlignment="center"
+                                android:textSize="16dp"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="–"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/t9TextView50"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="4"
+                                android:text="number of ways of arranging 7 guests in a circle with 2 particular guests sitting to each other"
+                                android:textAlignment="center"
+                                android:textSize="16dp"
+                                android:textColor="@color/black"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/t9TextView51"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="20dp"
+                            android:text="Thus we have,"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t9Latex_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:jlmv_alignHorizontal="center"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Example 5-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t9TextView52"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9TextView53"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) no restrictions are imposed?\n(b) the mothers and the kids are to occupy alternate seats?\n(c) all the kids must sit together?"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9SolutionExample5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t9Solution5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t9TextView54"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(a) The number of arrangements of 8 persons to be seated at a round table is"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t9Latex_11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t9TextView55"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(b) Assign a mother to a specific chair and let the other 3 be seated around the table. That is, find the number of ways the 4 mothers can be seated at the round table."
+                            android:textSize="16dp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t9Latex_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t9TextView56"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="20dp"
+                            android:text="Then, the 4 kids can be seated in 4 chairs as if they are seated linearly. Thus,"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t9Latex_13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:jlmv_alignHorizontal="center"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t9TextView57"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="20dp"
+                            android:text="by the Fundamental Counting Principle, the required number of ways can be seated is"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t9Latex_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:jlmv_alignHorizontal="center"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t9TextView58"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(c) Treat the 4 kids as one group.\n\n4 seats for mothers plus 1 group seat for kids = 5 seats to be arranged in a circle"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t9Latex_15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t9TextView59"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="20dp"
+                            android:text="Moreover, the 4 mothers can be arranged within its group in 4! ways.\n\nBy Fundamental Counting Principle, the required number of ways can all the persons be seated where all the kids must sit together is"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"/>
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t9Latex_16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:jlmv_alignHorizontal="center"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Activities-->
+
+                <TextView
+                    android:id="@+id/t9TextViewTitle4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:text="Activities"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t9Act1Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9Act1Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 2-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t9Act2Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9Act2Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 3-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t9Act3Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9Act3Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 4-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t9Act4Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9Act4Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 5-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t9Act5Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t9Act5Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Assessment-->
+
+                <TextView
+                    android:id="@+id/t9TextViewTitle5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:text="Assessment"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Assessment"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/t9ActScore"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/t9ActDirection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Test your knowledge of circular permutation with this assessment."
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/t9ActStart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_button"
+                        android:backgroundTint="@color/sea_green"
+                        android:paddingHorizontal="15dp"
+                        android:text="Start Activity"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/t9ActLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/t9ActFeedback"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/t9ActQuestion"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:text="The probability of getting a 4 in rolling a standard die once."
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/t9ActOpts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/t9ActOpt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option A"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"/>
+
+                        <Button
+                            android:id="@+id/t9ActOpt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option B"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"/>
+
+                        <Button
+                            android:id="@+id/t9ActOpt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option C"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"/>
+
+                        <Button
+                            android:id="@+id/t9ActOpt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option D"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/t9ActAnsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/t9ActSubmit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_button"
+                            android:backgroundTint="@color/sea_green"
+                            android:text="Submit"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/t9ActSolText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="Answer:"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t9ActAns"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ZoomControls
+            android:id="@+id/t9ZoomControls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@+id/t9ScrollView"
+            app:layout_anchorGravity="bottom|center"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

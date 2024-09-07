@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4DF8E"
+    tools:context=".ui.games.ColorRouletteActivity">
+
+    <RelativeLayout
+        android:id="@+id/rouletteHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/rouletteExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <Button
+            android:id="@+id/rouletteMechanics"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/custom_round"
+            android:backgroundTint="@color/bright_gray"
+            android:paddingHorizontal="15dp"
+            android:text="Game Mechanics"
+            android:textColor="@color/black"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Color Roulette"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/rouletteHeader" />
+
+    <LinearLayout
+        android:id="@+id/scoreLinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/gameTitle">
+
+        <TextView
+            android:id="@+id/rouletteHighScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="High Score: 0"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rouletteScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Score: 0"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/wheelImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/wheel_1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/scoreLinearlayout"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/wheelRing"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/wheel_ring"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/scoreLinearlayout"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/wheelOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@+id/wheelRing"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/redButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_option_button"
+            android:backgroundTint="@color/blue"
+            android:text="red"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/blueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_option_button"
+            android:backgroundTint="@color/blue"
+            android:text="blue"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/yellowButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_option_button"
+            android:backgroundTint="@color/blue"
+            android:text="yellow"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/greenButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_option_button"
+            android:backgroundTint="@color/blue"
+            android:text="green"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wheelOptions"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/rouletteRestart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/custom_round"
+            android:backgroundTint="@color/black"
+            android:text="Play Again"
+            android:textColor="@color/white"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/rouletteSpin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_round"
+            android:backgroundTint="@color/black"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:text="Spin"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/rouletteMaskView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:id="@+id/rouletteMechanicsContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/rouletteMechanicsText"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/blackboard"
+            android:paddingVertical="15dp"
+            android:paddingStart="25dp"
+            android:paddingEnd="130dp"
+            android:text="If you fail to submit your answer within the time limit or provide an incorrect response,"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageView
+            android:id="@+id/rouletteMechanicsImage"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitEnd"
+            android:src="@drawable/female_teacher4" />
+
+        <Button
+            android:id="@+id/cancelRouletteMechanics"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/custom_round"
+            android:backgroundTint="@color/wrong"
+            android:paddingHorizontal="15dp"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="10dp"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="#cee1ff"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp">
+
+            <TextView
+                android:id="@+id/textViewTopic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="115dp"
+                android:text="Simple Events"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"/>
+
+            <ImageView
+                android:id="@+id/imageViewTopic"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/topic_1"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/objective"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="115dp"
+                android:text="Objective"
+                android:textStyle="italic"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_below="@id/textViewTopic"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/textViewObj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="115dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/objective"
+                android:layout_alignParentStart="true"/>
+
+            <Button
+                android:id="@+id/topicButton"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="115dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/custom_round"
+                android:text="Start Lesson"
+                android:textAllCaps="false"
+                android:layout_below="@id/textViewObj"
+                android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

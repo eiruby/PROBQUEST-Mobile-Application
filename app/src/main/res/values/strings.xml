@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ProbQuest</string>
+
+    <string name="title_study">Study</string>
+    <string name="title_tests">Tests</string>
+    <string name="title_games">Games</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="direction">
+        Read and understand each question carefully and select your answer from the multiple-choice options.\n
+        \nChoose only one answer per question and click \'Next\' to proceed to the next question.\n
+        \nYou have a 3 minutes time limit per question.\n
+        \nYour score will display after answering all 15 questions. Good luck!
+    </string>
+
+    <string name="direction2">
+        Read and understand each question carefully and select your answer from the multiple-choice options.\n
+        \nChoose only one answer per question and click \'Next\' to proceed to the next question.\n
+        \nYou have a 3 minutes time limit per question.\n
+        \nYour score will display after answering all 10 questions. Good luck!
+    </string>
+
+</resources>

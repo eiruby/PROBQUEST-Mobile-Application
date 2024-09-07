@@ -1,0 +1,2693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    tools:context=".ui.study.TopicSixActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/t6Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_arrow_back_24"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Dependent Events"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/t6Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/round_menu_24"/>
+
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/t6ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/upper_corner"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:paddingBottom="50dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t6TextViewTitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/round_lightbulb_circle_24"
+                        android:drawablePadding="4dp"
+                        android:text="Objective"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue"/>
+
+                    <TextView
+                        android:id="@+id/t6TextView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:text="In this lesson, we will learn how to find the probability of dependent events."
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/t6TextViewTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Introduction to lesson"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <TextView
+                    android:id="@+id/t6TextView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/t6_image"/>
+
+                <TextView
+                    android:id="@+id/t6TextView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <ru.noties.jlatexmath.JLatexMathView
+                    android:id="@+id/t6Latex_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    app:jlmv_alignHorizontal="center"
+                    app:jlmv_textSize="16sp"
+                    app:jlmv_textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t6TextView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="This means, to find the probability of two events A and B that are dependent, multiply the probability of event A by the probability of event B given that A has happened."
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/t6TextViewTitle3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Illustrative Examples"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <!--Example 1-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t6TextView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t6TextView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) a red marble then a blue marble?\n(b) a blue marble then another blue marble?\n(c) both marbles are yellow?\n(d) two red marbles and a blue marble?\n(e) a red marble, followed by a blue marble, then a yellow marble?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/marbles_bag"/>
+
+                    <TextView
+                        android:id="@+id/t6SolutionExample1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t6Solution1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t6TextView7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t6TextView8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="20dp"
+                            android:text="There are a total of 15 marbles, of which 6 are red, 5 are blue, and 4 are yellow. Note that in the problem, the marbles are drawn without replacement. Once a marble is selected, the total number of marbles decreases."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:columnCount="2"
+                            android:rowCount="6">
+
+                            <TextView
+                                android:id="@+id/t6TextView9"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="First draw:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of drawing a red."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="There are 6 red marbles out of 15."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Second draw:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of drawing a blue."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="There are 5 blue marbles. A total of 14 marbles left since the first marble was drawn and not replaced."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView15"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Solution:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:orientation="vertical">
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView16"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="The probability of drawing a red marble then a blue marble is 1/7."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                        </GridLayout>
+
+                        <!--Example 1B-->
+
+                        <TextView
+                            android:id="@+id/t6TextView17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(b) Let A be the event of drawing a blue marble\nLet B be the event of drawing another blue marble"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t6TextView18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="20dp"
+                            android:text="There are a total of 15 marbles, of which 6 are red, 5 are blue, and 4 are yellow."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:columnCount="2"
+                            android:rowCount="3">
+
+                            <TextView
+                                android:id="@+id/t6TextView19"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="First draw:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView20"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of drawing a blue."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView21"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="There are 5 blue marbles out of 15."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView22"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Second draw:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView23"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of drawing another blue."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView24"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="A blue marble is drawn and not replaced. There are now 4 blue marbles. A total of 14 marbles left."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView25"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Solution:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView26"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="The probability of drawing a blue marble then another blue marble is 2/21."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                        </GridLayout>
+
+                        <!--Example 1C-->
+
+                        <TextView
+                            android:id="@+id/t6TextView27"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(c) Let A be the event of drawing a yellow marble\nLet B be the event of drawing another yellow marble"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t6TextView28"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="20dp"
+                            android:text="There are a total of 15 marbles, of which 6 are red, 5 are blue, and 4 are yellow."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:columnCount="2"
+                            android:rowCount="3">
+
+                            <TextView
+                                android:id="@+id/t6TextView29"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="First draw:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView30"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of drawing a yellow."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView31"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="There are 4 yellow marbles out of 15."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView32"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Second draw:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView33"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of drawing another yellow."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView34"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="A yellow marble is drawn and not replaced. There are now 3 yellow marbles. A total of 14 marbles left."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView35"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Solution:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView36"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="The probability of drawing a yellow marble then another yellow marble is 2/35."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                        </GridLayout>
+
+                        <!--Example 1D-->
+
+                        <TextView
+                            android:id="@+id/t6TextView37"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(d) Let A be the event of drawing a red marble\nLet B be the event of drawing another red marble\nLet C be the event of drawing a blue marble"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t6TextView38"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="20dp"
+                            android:text="There are a total of 15 marbles, of which 6 are red, 5 are blue, and 4 are yellow."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:columnCount="2"
+                            android:rowCount="3">
+
+                            <TextView
+                                android:id="@+id/t6TextView39"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="First draw:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView40"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of drawing a red."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView41"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="There are 6 red marbles out of 15."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView42"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Second draw:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView43"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of drawing another red."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView44"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="A red marble is drawn and not replaced. There are now 5 red marbles. A total of 14 marbles left."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView45"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Third draw:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView46"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of drawing a blue."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView47"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="There are 5 blue marbles. There are a total of 13 marbles left since the second marble was drawn and not replaced."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView48"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Solution:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView49"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="The probability of drawing two red marbles and a blue marble is 5/91."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                        </GridLayout>
+
+                        <!--Example 1E-->
+
+                        <TextView
+                            android:id="@+id/t6TextView50"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(e) Let A be the event of drawing a red marble\nLet B be the event of drawing a blue marble\nLet C be the event of drawing a yellow marble"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t6TextView51"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="20dp"
+                            android:text="There are a total of 15 marbles, of which 6 are red, 5 are blue, and 4 are yellow."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:columnCount="2"
+                            android:rowCount="3">
+
+                            <TextView
+                                android:id="@+id/t6TextView52"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="First draw:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView53"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of drawing a red."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView54"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="There are 6 red marbles out of 15."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView55"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Second draw:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView56"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of drawing a blue."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_16"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView57"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="There are 5 blue marbles. There are a total of 14 marbles left since the first marble was drawn and not replaced."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView58"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Third draw:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView59"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of drawing a yellow."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_17"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView60"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="There are 4 yellow marbles. There are a total of 13 marbles left since the second marble was drawn and not replaced."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView61"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Solution:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_18"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView62"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="The probability of drawing a red marble, followed by a blue marble, then a yellow marble is 4/91."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                        </GridLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Example 2-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t6TextView63"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t6TextView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) a jack on the first draw and a king on the second draw?\n(b) an ace on the first draw and another ace on the second draw?\n(c) a diamond on the first draw and a black card on the second draw?\n(d) a diamond on the first draw and a red card on the second draw?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/deck_of_cards"/>
+
+                    <TextView
+                        android:id="@+id/t6SolutionExample2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t6Solution2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t6TextView65"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t6TextView66"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="20dp"
+                            android:text="There are a total of 52 cards, of which 4 are jack, and 4 are king."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:columnCount="2"
+                            android:rowCount="3">
+
+                            <TextView
+                                android:id="@+id/t6TextView67"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="First draw:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView68"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of drawing a jack."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_19"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView69"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="There are 4 jacks out of 52 cards in a deck."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView70"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Second draw:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView71"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of drawing a king."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_20"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView72"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="There are 4 king cards. There are a total of 51 cards left since the first card was drawn and not replaced."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView73"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Solution:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_21"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView74"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="The probability of drawing a jack then a king in a deck of cards is 4/663."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                        </GridLayout>
+
+                        <!--Example 2B-->
+
+                        <TextView
+                            android:id="@+id/t6TextView75"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(b) Let A be the event of drawing an ace\nLet B be the event of drawing another ace"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t6TextView76"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="20dp"
+                            android:text="There are a total of 52 cards, of which 4 are ace."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:columnCount="2"
+                            android:rowCount="3">
+
+                            <TextView
+                                android:id="@+id/t6TextView77"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="First draw:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView78"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of drawing an ace."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_22"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView79"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="There are 4 aces out of 52 cards in a deck."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView80"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Second draw:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView81"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of drawing another ace."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_23"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView82"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="An ace card is drawn and not replaced. There are now 3 aces. A total of 51 cards left."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView83"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Solution:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_24"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView84"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="The probability of drawing an ace then another ace in a deck of cards is 3/663."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                        </GridLayout>
+
+                        <!--Example 2C-->
+
+                        <TextView
+                            android:id="@+id/t6TextView85"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(c) Let A be the event of drawing a diamond\nLet B be the event of drawing a black card"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t6TextView86"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="20dp"
+                            android:text="There are a total of 52 cards, of which 13 are diamonds and 26 are black."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:columnCount="2"
+                            android:rowCount="3">
+
+                            <TextView
+                                android:id="@+id/t6TextView87"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="First draw:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView88"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of drawing an ace."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_25"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView89"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="There are 4 aces out of 52 cards in a deck."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView90"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Second draw:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView91"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of drawing another ace."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_26"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView92"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="An ace card is drawn and not replaced. There are now 3 aces. A total of 51 cards left."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView93"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Solution:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_27"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView94"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="The probability of drawing an ace then a black card in a deck of cards is 13/102."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                        </GridLayout>
+
+                        <!--Example 2D-->
+
+                        <TextView
+                            android:id="@+id/t6TextView95"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="(d) Let A be the event of drawing a diamond\nLet B be the event of drawing a red card"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/t6TextView96"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="20dp"
+                            android:text="There are a total of 52 cards, of which 13 are diamonds and 26 are red."
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:columnCount="2"
+                            android:rowCount="3">
+
+                            <TextView
+                                android:id="@+id/t6TextView97"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="First draw:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView98"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of drawing a diamond."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_28"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView99"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="There are 13 diamonds out of 52 cards in a deck."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView100"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Second draw:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView101"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of drawing a red."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_29"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView102"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="There are 25 red cards left since a diamond is red and was drawn without replacement. There are a total of 51 cards left."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView103"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Solution:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_30"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView104"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="The probability of drawing a diamond then a red card in a deck of cards is 25/104."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                        </GridLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Example 3-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t6TextView105"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t6SolutionExample3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t6Solution3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t6TextView106"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="20dp"
+                            android:text="Let A be the event of taking out a white towel\nLet B be the event of taking out another white towel"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:columnCount="2"
+                            android:rowCount="3">
+
+                            <TextView
+                                android:id="@+id/t6TextView107"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="First draw out:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView108"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of taking out a white towel."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_31"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView109"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="There are 4 white towels out of 10 towels."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView110"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Second draw out:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView111"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of taking out another white towel."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_32"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView112"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="A white towel is taken out and not returned. There are now 3 white towels. There are a total of 9 towels left."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView113"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Solution:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_33"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView114"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="The probability of taking out both white towels is 1/3."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                        </GridLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Example 4-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t6TextView115"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t6SolutionExample4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t6Solution4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t6TextView116"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="20dp"
+                            android:text="Let A be the event of drinking a buko juice\nLet B be the event of drinking another buko juice"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:columnCount="2"
+                            android:rowCount="3">
+
+                            <TextView
+                                android:id="@+id/t6TextView117"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="First drink:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView118"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of drinking a buko juice."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_34"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView119"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="There are 4 glasses of buko juice out of 10 juices."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView120"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Second drink:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView121"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of drinking another buko juice."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_35"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView122"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="One glass of buko juice was drank. There are now 3 glasses of buko juice. There are a total of 9 juices left."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView123"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Solution:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_36"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView124"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="The probability of drinking the two glasses of buko juice is 2/15."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                        </GridLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Example 5-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_edit_passcode">
+
+                    <TextView
+                        android:id="@+id/t6TextView125"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t6SolutionExample5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="5dp"
+                        android:text="Show Solution"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+
+                    <LinearLayout
+                        android:id="@+id/t6Solution5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t6TextView126"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="20dp"
+                            android:text="Let A be the event of choosing a boy\nLet B be the event of choosing a girl"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"/>
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:columnCount="2"
+                            android:rowCount="3">
+
+                            <TextView
+                                android:id="@+id/t6TextView127"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="First to choose:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView128"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of choosing a boy."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_37"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView129"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="There are 18 boys out of 30 students in class"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView130"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Second to choose:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t6TextView131"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Probability of choosing a girl."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_38"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_alignHorizontal="center"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView132"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="There are 12 girls. There are a total of 29 students left since one boy was already chosen to present in class."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t6TextView133"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="Solution:"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="2"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <ru.noties.jlatexmath.JLatexMathView
+                                    android:id="@+id/t6Latex_39"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    app:jlmv_textSize="16sp"
+                                    app:jlmv_textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/t6TextView134"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="The probability of choosing a boy first and a girl on the second to present in class is 36/145."
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                        </GridLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Activity-->
+
+                <TextView
+                    android:id="@+id/t6TextViewTitle4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:text="Activities"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <!--Activity 1-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t6Act1Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t6Act1Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) a white marble then a brown marble?\n\n(b) a brown marble then a green marble?\n\n(c) both marbles are brown?\n\n(d) a white marble and then two green marbles?\n\n(e) a white marble, followed by a green marble, then a brown marble?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 2-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t6Act2Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t6Act2Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) the second ball is green?\n\n(b) the first and the second ball is red?\n\n(c) the second ball is green given that the first one is red?\n\n(d) the second ball is red given that the first one is green?\n\n(e) the second ball is green given that the first one is green?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 3-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t6Act3Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t6Act3Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) a milk chocolate and a dark chocolate?\n\n(b) a milk chocolate and a white chocolate?\n\n(c) a dark chocolate and a white chocolate?\n\n(d) two dark chocolates?\n\n(e) two white chocolates?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 4-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t6Act4Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t6Act4Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) a jack on the first draw and a king on the second draw?\n\n(b) an ace on the first draw and a heart on the second draw?\n\n(c) a red queen on the first draw and a black king on the second draw?\n\n(d) a diamond on the first draw and a queen of clubs on the second draw?\n\n(e) a face card on the first draw and a number card on the second draw?"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Activity 5-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/t6Act5Direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/t6Act5Problems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(a) P(A|C)\n\n(b)P(A|B) \n\n(c)P(B|C) \n\n(d) P(C|B)\n\n(e) P(C|A)"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <!--Assessment-->
+
+                <TextView
+                    android:id="@+id/t6TextViewTitle5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:text="Assessment"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edit_passcode"
+                    android:backgroundTint="@color/light_blue"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Assessment"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/t6ActScore"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/t6ActDirection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Test your knowledge of dependent events with this assessment."
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/t6ActStart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_button"
+                        android:backgroundTint="@color/sea_green"
+                        android:paddingHorizontal="15dp"
+                        android:text="Start Activity"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/t6ActLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/t6ActFeedback"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/t6ActQuestion"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:text="The probability of getting a 4 in rolling a standard die once."
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/t6ActImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/t5_act_img"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/t6ActOpts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/t6ActOpt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option A"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"/>
+
+                        <Button
+                            android:id="@+id/t6ActOpt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option B"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"/>
+
+                        <Button
+                            android:id="@+id/t6ActOpt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option C"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"/>
+
+                        <Button
+                            android:id="@+id/t6ActOpt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@drawable/custom_selected_button"
+                            android:text="option D"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/t6ActAnsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/t6ActSubmit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_button"
+                            android:backgroundTint="@color/sea_green"
+                            android:text="Submit"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/t6ActSolText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="Answer:"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ru.noties.jlatexmath.JLatexMathView
+                            android:id="@+id/t6ActAns"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            app:jlmv_textSize="16sp"
+                            app:jlmv_textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Reference-->
+
+                <TextView
+                    android:id="@+id/t6TextViewTitle6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:text="Reference"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/blue"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="https://www.cuemath.com/data/dependent-events/\n\nhttps://www.bigideasmath.com/protected/content/ipe/grade%207/09/g7_09_04.pdf"
+                    android:textStyle="italic"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ZoomControls
+            android:id="@+id/t6ZoomControls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@+id/t6ScrollView"
+            app:layout_anchorGravity="bottom|center"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

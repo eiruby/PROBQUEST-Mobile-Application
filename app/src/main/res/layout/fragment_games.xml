@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.games.GamesFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutGames"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:text="Welcome to\nProbability Games!"
+                android:textColor="@color/blue"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+             <Button
+                android:id="@+id/tutorialGames"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/custom_round"
+                android:backgroundTint="@color/bright_gray"
+                android:drawableStart="@drawable/baseline_play_arrow_24"
+                android:paddingHorizontal="15dp"
+                android:text="Tutorial"
+                android:textColor="@color/black"
+                android:textAllCaps="false"/>
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listViewGames"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:listSelector="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/maskView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/tutorialContent3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_anchor="@+id/linearLayoutGames"
+        app:layout_anchorGravity="bottom|center">
+
+        <TextView
+            android:id="@+id/tutorialText3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/blackboard"
+            android:paddingVertical="15dp"
+            android:paddingStart="25dp"
+            android:paddingEnd="130dp"
+            android:text="Hello there, and welcome to the PROBQUEST app!"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageView
+            android:id="@+id/tutorialImage3"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitEnd"
+            android:src="@drawable/female_teacher3" />
+
+        <Button
+            android:id="@+id/tutorialCancel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="15dp"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/custom_round"
+            android:backgroundTint="#FD4A34"
+            android:textColor="@color/white"
+            android:text="Cancel Tutorial"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

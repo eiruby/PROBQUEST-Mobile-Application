@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="On this page"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/objectives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:drawableStart="@drawable/baseline_play_arrow_24"
+        android:drawablePadding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/objectives"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:drawableStart="@drawable/baseline_play_arrow_24"
+        android:drawablePadding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/examples"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/introduction"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:drawableStart="@drawable/baseline_play_arrow_24"
+        android:drawablePadding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/activities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/examples"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:drawableStart="@drawable/baseline_play_arrow_24"
+        android:drawablePadding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/assessment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activities"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:drawableStart="@drawable/baseline_play_arrow_24"
+        android:drawablePadding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="16sp"/>
+
+</RelativeLayout>
