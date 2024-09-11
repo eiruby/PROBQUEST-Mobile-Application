@@ -1,9 +1,5 @@
 # *PROBQUEST*: A Mobile Application for Junior High School Probability Education
 
-## Description
-
-*PROBQUEST* is an educational mobile application designed to help junior high school students understand fundamental concepts in probability. The app provides interactive lessons, quizzes, and games, enhancing students' learning experiences. Developed as part of my thesis project at Pangasinan State University – Urdaneta City Campus.
-
 ## Features
 
 - *Interactive Lessons*: Detailed explanations of key probability concepts such as probability rules, events, and outcomes.
