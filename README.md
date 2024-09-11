@@ -16,7 +16,7 @@
 
 ## Screenshots
 
-![splash screen](images/splash_screen.png){ width=50% } ![study section](study_section.png){ width=50% } ![quests section](quests_section.png){ width=50% } ![test section](test_section.png){ width=50% } ![games section](games_section.png){ width=50% } ![profile section](profile_section.png){ width=50% }
+![splash screen](images/splash_screen.png) ![study section](images/study_section.png) ![quests section](images/quests_section.png) ![test section](images/test_section.png) ![games section](images/games_section.png) ![profile section](images/profile_section.png)
 
 ## Contact
 
