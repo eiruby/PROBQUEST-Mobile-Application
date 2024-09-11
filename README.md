@@ -12,8 +12,6 @@
 
 ## Screenshots
 
-## Screenshots
-
 <p align="center">
   <img src="images/splash_screen.png" alt="splash screen" width="200"/>
   <img src="images/study_section.png" alt="study section" width="200"/>
