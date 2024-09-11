@@ -16,7 +16,19 @@
 
 ## Screenshots
 
-![splash screen](images/splash_screen.png) ![study section](images/study_section.png) ![quests section](images/quests_section.png) ![test section](images/test_section.png) ![games section](images/games_section.png) ![profile section](images/profile_section.png)
+## Screenshots
+
+<p align="center">
+  <img src="images/splash_screen.png" alt="splash screen" width="200"/>
+  <img src="images/study_section.png" alt="study section" width="200"/>
+  <img src="images/quests_section.png" alt="quests section" width="200"/>
+</p>
+
+<p align="center">
+  <img src="images/test_section.png" alt="test section" width="200"/>
+  <img src="images/games_section.png" alt="games section" width="200"/>
+  <img src="images/profile_section.png" alt="profile section" width="200"/>
+</p>
 
 ## Contact
 
